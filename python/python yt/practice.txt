@@ -1,4 +1,0 @@
-Hi everyone
-we are learnzing file handling in python
-using java
-i like programming in java
