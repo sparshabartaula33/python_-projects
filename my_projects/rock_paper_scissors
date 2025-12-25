@@ -1,0 +1,46 @@
+import random 
+symbols = {
+    'r': 'Rock 🗿',
+    'p': 'Paper 📄',
+    's': 'Scissors ✄'
+}
+
+items = ['r', 'p', 's']
+while True:
+       user_choice = input('Choose rock , paper , scissors : (r/p/s)').lower()
+       
+       if user_choice not in items:
+         print("Invalid input")
+         break
+
+       print("Your choice : ",symbols[user_choice]) 
+       comp_choice = random.choice(items)
+       print("computer choose:",symbols[comp_choice])
+      
+       if (user_choice == comp_choice):
+          print("Draw")
+       elif (user_choice == 'r' and comp_choice == 'p'):
+          print("Computer won")
+       elif (user_choice == 'r' and comp_choice == 's'):
+          print("You won")
+       elif (user_choice == 'p' and comp_choice == 'r'):
+          print("You won")
+       elif (user_choice == 'p' and comp_choice == 's'):
+          print("Computer won")
+       elif (user_choice == 's' and comp_choice == 'p'):
+          print("You won")
+       elif (user_choice == 's' and comp_choice == 'r'):
+          print("Computer won")
+       
+
+
+       
+
+       
+       
+
+       
+
+
+
+  
